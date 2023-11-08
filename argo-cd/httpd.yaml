@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: httpd
+  namespace: argocd
+spec:
+  project: default
+  source:
+    chart: httpd
+    repoURL: https://github.com/ziadali001/simple-gitops-app/releases/download/v1.0.0/httpd-0.1.0.tgz
+    targetRevision: 0.1.0
+    helm:
+      releaseName: httpd
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: default
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
