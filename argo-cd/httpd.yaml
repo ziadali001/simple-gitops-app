@@ -8,7 +8,7 @@ spec:
   source:
     chart: httpd
     repoURL: https://github.com/ziadali001/simple-gitops-app/
-    targetRevision: 0.1.0
+    targetRevision: 2.0.0
     helm:
       releaseName: httpd
   destination:
