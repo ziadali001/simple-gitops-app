@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: 'https://github.com/ziadali001/simple-gitops-app.git'
-    path: manifests
+    path: mychart
     targetRevision: master
     helm:
       releaseName: nginx
