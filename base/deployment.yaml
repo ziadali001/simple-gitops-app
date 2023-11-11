@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: caddy
-          image: caddy:alpine
+          image: caddy:2.7.5-alpine
           ports:
           - containerPort: 80
             name: http
