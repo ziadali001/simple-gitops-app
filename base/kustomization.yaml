@@ -11,7 +11,7 @@ resources:
 configMapGenerator:
 - name: caddy-config
   files:
-  - Caddyfile.txt
+  - Caddyfile
 
 
 namespace: default
